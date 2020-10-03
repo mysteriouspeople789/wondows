@@ -165,11 +165,12 @@ span {
     }
 }
 
-@media screen and (max-height: 610px) {
+@media screen and (min-height: 610px) {
     #padding3 {
-        height: 60px;
+        height: 0;
     }
 }
+
 
 #toggle-dark {
     padding: 14px 18px;
@@ -188,4 +189,8 @@ span {
 
 #toggle-dark:hover {
     background-color: var(--toggle-hover);
+}
+
+#padding3 {
+    height: 80px;
 }
