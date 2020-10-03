@@ -1,13 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Titillium+Web&display=swap');
 
-.bg {
+
+body.dark {
+    --bg-color: #000;
+    --navbar-bg: #333;
+    --font-color: #f2f2f2;
+    --navbar-hover: #1f1f1f;
+    --toggle-hover: #505050;
+    --toggle-bg: #333;
+    transition: background-color 500ms ease-in-out;
+}
+
+body.light {
+    --bg-color: #fff;
+    --navbar-bg: #5CB3FF;
+    --font-color: #000;
+    --navbar-hover: #56A5EC;
+    --toggle-hover: #D3D3D3;
+    --toggle-bg: #E8E8E8;
+    transition: background-color 500ms ease-in-out;
+}
+
+body {
     width: 100vw;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 
 .navbar {
-    background-color: #333;
+    background-color: var(--navbar-bg);
     overflow: hidden;
     position: fixed;
     padding: 0;
@@ -18,7 +39,7 @@
 
 .navbar span, .navbar2 span {
     float: left;
-    color: #f2f2f2;
+    color: var(--font-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -28,9 +49,9 @@
 
 .navbar2 {
     bottom: 0;
-    background-color: #333;
+    background-color: var(--navbar-bg);
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 
@@ -70,7 +91,7 @@ body {
 #dropdown-content {
     display: none;
     position: fixed;
-    background-color: #333;
+    background-color: var(--navbar-bg);
     min-width: 160px;
     /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     z-index: 1;
@@ -90,7 +111,7 @@ body {
 
 
 span:hover {
-    background-color: #000;
+    background-color: var(--navbar-hover);
 }
 
 
@@ -138,6 +159,33 @@ span {
         right: 4px;
         left: auto
     }
+
+    #toggle-dark {
+        bottom: 75px;
+    }
 }
 
+@media screen and (max-height: 610px) {
+    #padding3 {
+        height: 60px;
+    }
+}
 
+#toggle-dark {
+    padding: 14px 18px;
+    background-color: var(--toggle-bg);
+    color: var(--font-color);
+    border: 3px solid var(--font-color);
+    border-radius: 5px;
+    position: fixed;
+    bottom: 12vh;
+    right: 5vw;
+    font-size: large;
+    font-family: "Merriweather", Arial, serif;
+    cursor: pointer;
+    margin: 0;
+}
+
+#toggle-dark:hover {
+    background-color: var(--toggle-hover);
+}
