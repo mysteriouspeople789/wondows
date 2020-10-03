@@ -12,9 +12,11 @@ function changeTheme() {
     if(sessionStorage.theme === "dark") {
         sessionStorage.theme = "light"
         document.getElementById("body").className = "light"
+        document.getElementById("toggle-dark").innerHTML = "View in dark mode"
     }
     else {
         sessionStorage.theme = "dark"
         document.getElementById("body").className = "dark"
+        document.getElementById("toggle-dark").innerHTML = "View in light mode"
     }
 }
