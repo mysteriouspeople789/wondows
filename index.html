@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg">
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
-<body>
+<body class="dark" id="body">
 <div class="navbar">
     <span id="navbar-left">Buy</span>
     <span id="navbar-center">Support</span>
@@ -19,17 +19,19 @@
         </div>
     </div>
 </div>
-<div id="navbar-padding" style="height: 40px"></div>
+<div class="navbar-padding" style="height: 40px"></div>
 <div class="content" onclick="hideDropdown()">
     <div id="padding1"></div>
-    <img src="logo.PNG" alt="The Wondows logo" id="logo">
+    <img src="logo.png" alt="The Wondows logo" id="logo">
     <h1>Wondows</h1>
     <h2>Windows without nonsense</h2>
     <div id="padding2"></div>
     <h4>No more<br>❌System32 to accidentally delete<br>❌Spying on your device<br>❌Registry to play around with</h4>
+    <button id="toggle-dark" onclick="changeTheme()">View in light mode</button>
     <div id="padding3"></div>
 </div>
 
+<div class="navbar-padding" style="height: 40px"></div>
 <div class="navbar2">
     <span id="footer-left">What's new</span>
     <span id="footer-center">About us</span>
