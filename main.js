@@ -5,8 +5,10 @@ if(sessionStorage.theme === undefined) {
 setTimeout(function() {
     if(sessionStorage.theme === "dark") {
         document.getElementById("body").className = "dark"
+        document.getElementById("toggle-dark").innerHTML = "View in light mode"
     } else {
         document.getElementById("body").className = "light"
+        document.getElementById("toggle-dark").innerText = "View in dark mode"
     }
 }, 0)
 
