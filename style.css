@@ -14,7 +14,7 @@ body.dark {
 body.light {
     --bg-color: #fff;
     --navbar-bg: #5CB3FF;
-    --font-color: #000;
+    --font-color: #000000;
     --navbar-hover: #56A5EC;
     --toggle-hover: #D3D3D3;
     --toggle-bg: #E8E8E8;
@@ -82,6 +82,7 @@ h1, h2 {
 h4, span {
     font-weight: normal;
     font-family: "Merriweather", Arial, serif;
+    color: var(--font-color)
 }
 
 body {
@@ -102,7 +103,7 @@ body {
 
 #dropdown-content span {
     float: none;
-    color: white;
+    color: var(--font-color);
     padding: 14px 16px;
     text-decoration: none;
     display: block;
