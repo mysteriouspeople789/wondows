@@ -1,3 +1,16 @@
+if(sessionStorage.theme === undefined) {
+    sessionStorage.theme = "dark"
+}
+
+setTimeout(function() {
+    if(sessionStorage.theme === "dark") {
+        document.getElementById("body").className = "dark"
+    } else {
+        document.getElementById("body").className = "light"
+    }
+}, 0)
+
+
 function showDropdown() {
     document.getElementById("dropdown-content").style.display = "block"
 }
