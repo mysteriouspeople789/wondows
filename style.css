@@ -37,7 +37,7 @@ body {
     width: 100vw;
 }
 
-.navbar a, .navbar2 a, .navbar span, .navbar2 span {
+.navbar span, .navbar2 span {
     float: left;
     color: var(--font-color);
     text-align: center;
@@ -79,9 +79,9 @@ h1, h2 {
     font-family: "Titillium Web", Georgia, serif;
 }
 
-h4, a, span {
+h4, span {
     font-weight: normal;
-    font-family: "Merriweather", Arial, serif;
+    font-family: "Merriweather Sans", Arial, serif;
     color: var(--font-color)
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 
-#dropdown-content a {
+#dropdown-content span {
     float: none;
     color: var(--font-color);
     padding: 14px 16px;
@@ -111,7 +111,7 @@ body {
 }
 
 
-a:hover, span:hover {
+span:hover {
     background-color: var(--navbar-hover);
 }
 
@@ -126,7 +126,7 @@ a:hover, span:hover {
     position: relative;
 }
 
-span, a {
+span {
     margin: 0;
     padding: 0;
 }
@@ -183,7 +183,7 @@ span, a {
     bottom: 12vh;
     right: 5vw;
     font-size: large;
-    font-family: "Merriweather", Arial, serif;
+    font-family: "Merriweather Sans", Arial, serif;
     cursor: pointer;
     margin: 0;
 }
