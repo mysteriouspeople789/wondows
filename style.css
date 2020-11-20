@@ -71,7 +71,7 @@ img {
     width: 50%;
 }
 
-h1, h2, h4 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -79,7 +79,7 @@ h1, h2 {
     font-family: "Titillium Web", Georgia, serif;
 }
 
-h4, span {
+h3, span {
     font-weight: normal;
     font-family: "Merriweather Sans", Arial, serif;
     color: var(--font-color)
